@@ -111,7 +111,6 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 color: var(--secondary-text-color);
-margin-right: 50px;
 }
 .mail-link:hover,
 .mail-link:focus{
@@ -124,10 +123,15 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 color: var(--secondary-text-color);
+margin-bottom: 30px;
 }
 .tel-link:hover,
 .tel-link:focus{
 color: var(--accent-color);
+}
+.mail-link-svg:hover,
+.tel-link-svg:focus{
+fill: var(--accent-color);
 }
 /*=========== END HEADER =========*/
 
@@ -293,24 +297,45 @@ font-size: 16px;
 line-height: 1.18;
 letter-spacing: 0.03em;
 color: var(--secondary-text-color);
+margin-bottom: 30px;
 }
 .our-team-text{
 padding-top: 24px;
 padding-bottom: 24px;
+padding-left: 52px;
+padding-right: 52px;
 background-color: #ffffff;
 }
 .our-team-card{
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
 }
+.team-social-list{
+display: flex;
+justify-content: space-between;
+}
+.team-social-list-item{
+
+}
 .team-social-list-icon{
 width: 20px;
 height: 20px;
+fill: var(--secondary-text-color);
+};
 }
 .team-social-list-link{
-display: block;
+display: flex;
+align-items: center;
+justify-content: center;
 width: 44px;
 height: 44px;
+border-radius: 50%;
+background-color: #ffffff;
+}
+.team-social-list-link:hover .team-social-list-icon,
+.team-social-list-link:focus .team-social-list-icon{
+fill: #ffffff;
+background-color: var(--accent-color);
 }
 /*=========== END TEAM =========*/
 
@@ -343,10 +368,12 @@ border: 1px solid #AFB1B8;
 border-radius: 4px;
 }
 .client-link{
-width: 170px;
-height: 92px;
+display: flex;
 justify-content: center;
 align-items: center;
+width: 170px;
+height: 92px;
+
 }
 
 .client-item:hover .icon-color,
