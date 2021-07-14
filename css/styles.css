@@ -282,10 +282,8 @@ font-family: var(--main-font);
 font-weight: 500;
 font-size: 16px;
 line-height: 1.18;
-text-align: center;
 letter-spacing: 0.03em;
 color: var(--main-text-color);
-
 margin-bottom: 15px;
 }
 .our-team-position{
@@ -293,37 +291,32 @@ font-family: var(--main-font);
 font-weight: normal;
 font-size: 16px;
 line-height: 1.18;
-text-align: center;
 letter-spacing: 0.03em;
 color: var(--secondary-text-color);
 }
 .our-team-text{
-flex-basis: calc ((100% - 120px) / 4);
 padding-top: 24px;
 padding-bottom: 24px;
-padding-left: 58px;
-padding-right: 58px;
-border-top: none;
+background-color: #ffffff;
 }
 .our-team-card{
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
 }
-
 .social-list-icon{
-  width: 20px;
-  height: 20px;
+width: 20px;
+height: 20px;
 }
 .social-list-link{
-  display: block;
-  width: 44px;
-  height: 44px;
+display: block;
+width: 44px;
+height: 44px;
 }
 /*=========== END TEAM =========*/
 
 /*=========== CLIENTS =========*/
 .clients-container{
-  margin-bottom: 96px;
+margin-bottom: 96px;
 }
 .clients-all-list{
 display: flex;
@@ -354,8 +347,6 @@ width: 170px;
 height: 92px;
 justify-content: center;
 align-items: center;
-
-
 }
 
 /*=========== END CLIENTS =========*/
@@ -422,6 +413,44 @@ color: var(--accent-color);
 }
 .menu-footer-item:not(:last-child){
 margin-bottom: 15px;
+}
+.footer{
+display: flex;
+margin-left: 70px;
+}
+.footer-social{
+margin-left: 70px;
+}
+.footer-social-list-title{
+margin: auto;
+margin-bottom: 20px;
+text-transform: uppercase;
+font-size: 14px;
+color: #ffffff;
+}
+.footer-social-list{
+display: flex;
+}
+.footer-social-list-item{
+margin-right: 10px;
+}
+.footer-social-list-icon{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 44px;
+height: 44px;
+border-radius: 50%;
+color: #ffffff;
+background-color: rgba(255, 255, 255, 0.1);;
+}
+.footer-icon{
+fill: currentColor;
+}
+.footer-social-list-icon:hover,
+.footer-social-list-icon:focus{
+fill: #ffffff;
+background-color: var(--accent-color);
 }
 /*=========== END FOOTER =========*/
 
