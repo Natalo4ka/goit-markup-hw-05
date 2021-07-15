@@ -111,6 +111,7 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 color: var(--secondary-text-color);
+
 }
 .mail-link:hover,
 .mail-link:focus{
@@ -123,7 +124,6 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 color: var(--secondary-text-color);
-margin-bottom: 30px;
 }
 .tel-link:hover,
 .tel-link:focus{
@@ -132,6 +132,17 @@ color: var(--accent-color);
 .mail-link-svg:hover,
 .tel-link-svg:focus{
 fill: var(--accent-color);
+}
+
+.mail-link-svg{
+fill: var(--secondary-text-color);
+fill: currentColor;
+margin-right: 10px;
+}
+.tel-link-svg{
+fill: var(--secondary-text-color);
+fill: currentColor;
+margin-right: 10px;
 }
 /*=========== END HEADER =========*/
 
