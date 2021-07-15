@@ -328,11 +328,11 @@ justify-content: space-between;
 .team-social-list-item{
 
 }
+
 .team-social-list-icon{
 width: 20px;
 height: 20px;
 fill: var(--secondary-text-color);
-};
 }
 .team-social-list-link{
 display: flex;
@@ -340,7 +340,7 @@ align-items: center;
 justify-content: center;
 width: 44px;
 height: 44px;
-border-radius: 50%;
+border-radius: 50px;
 background-color: #ffffff;
 }
 .team-social-list-link:hover .team-social-list-icon,
@@ -377,6 +377,7 @@ width: 170px;
 height: 92px;
 border: 1px solid #AFB1B8;
 border-radius: 4px;
+cursor: pointer;
 }
 .client-link{
 display: flex;
@@ -384,15 +385,16 @@ justify-content: center;
 align-items: center;
 width: 170px;
 height: 92px;
-
 }
-
-.client-item:hover .icon-color,
-.client-item:focus .icon-color{
+.clients-svg{
+fill: var(--secondary-text-color);
+}
+.clients-item:hover .clients-svg,
+.clients-item:focus .clients-svg{
 fill: var(--accent-color);
 }
-.client-item:hover,
-.client-item:focus{
+.clients-item:hover,
+.clients-item:focus{
 border-color: var(--accent-color);
 }
 /*=========== END CLIENTS =========*/
