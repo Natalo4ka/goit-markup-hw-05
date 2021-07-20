@@ -104,6 +104,10 @@ margin-left: auto;
 .menu-item:not(:last-child){
 margin-right: 50px;
 }
+.menu-item{
+display: flex;
+align-items: center;
+}
 .mail-link{
 font-family: var(--main-font);
 font-weight: 500;
@@ -111,7 +115,6 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 color: var(--secondary-text-color);
-
 }
 .mail-link:hover,
 .mail-link:focus{
@@ -131,10 +134,11 @@ text-align: center;
 color: var(--accent-color);
 }
 .mail-link-svg:hover,
+.mail-link-svg:focus,
+.tel-link-svg:hover,
 .tel-link-svg:focus{
 fill: var(--accent-color);
 }
-
 .mail-link-svg{
 fill: var(--secondary-text-color);
 fill: currentColor;
@@ -162,7 +166,7 @@ background-size: cover;
 text-align: center;
 padding-top: 200px;
 padding-bottom: 200px;
-max-width: 1600px;
+max-width: 2000px;
 margin: auto
 }
 .hero-title{
@@ -300,6 +304,7 @@ font-size: 16px;
 line-height: 1.18;
 letter-spacing: 0.03em;
 color: var(--main-text-color);
+margin-top: 30px;
 margin-bottom: 15px;
 }
 .our-team-position{
@@ -309,16 +314,11 @@ font-size: 16px;
 line-height: 1.18;
 letter-spacing: 0.03em;
 color: var(--secondary-text-color);
-margin-bottom: 30px;
+margin-bottom: 20px;
 }
-.our-team-text{
-padding-top: 24px;
-padding-bottom: 24px;
-padding-left: 52px;
-padding-right: 52px;
-background-color: #ffffff;
-}
+
 .our-team-card{
+background-color: #ffffff;
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
 }
@@ -326,6 +326,9 @@ border-radius: 0px 0px 4px 4px;
 .team-social-list{
 display: flex;
 justify-content: space-between;
+padding-left: 38px;
+padding-right: 38px;
+padding-bottom: 38px;
 }
 .team-social-list-item{
 
@@ -371,12 +374,12 @@ line-height: 1.67;
 text-align: center;
 letter-spacing: 0.03em;
 color: var(--main-text-color);
+margin-top: 94px;
 margin-bottom: 56px;
 }
 .clients-item{
 justify-content: center;
 align-items: center;
-margin-top: 50px;
 width: 170px;
 height: 92px;
 border: 1px solid #AFB1B8;
@@ -469,6 +472,7 @@ margin-bottom: 15px;
 .footer{
 display: flex;
 margin-left: 70px;
+align-items: baseline;
 }
 .footer-social{
 margin-left: 70px;
