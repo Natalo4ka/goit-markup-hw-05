@@ -73,6 +73,8 @@ line-height: 1.2;
 letter-spacing: 0.03em;
 color: var(--accent-color);
 margin-right: 90px;
+
+animation-duration: 1000ms;
 }
 .logo-header-part-2{
 color: #000000;
@@ -84,7 +86,8 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 color: var(--main-text-color);
-transition: color 250ms linear;
+transition: color 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu-link.current {
 color: var(--accent-color);
@@ -129,6 +132,9 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 color: var(--secondary-text-color);
+transition: color 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .mail-link:hover,
 .mail-link:focus{
@@ -143,6 +149,9 @@ letter-spacing: 0.02em;
 color: var(--secondary-text-color);
 text-align: center;
 display: flex;
+transition: color 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 }
 .tel-link:hover,
 .tel-link:focus{
@@ -387,6 +396,8 @@ justify-content: center;
 width: 44px;
 height: 44px;
 border-radius: 50%;
+transition: color 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-social-list-link:hover .team-social-list-icon,
 .team-social-list-link:focus .team-social-list-icon{
@@ -428,7 +439,7 @@ border: 1px solid #AFB1B8;
 border-radius: 4px;
 cursor: pointer;
 }
-.client-link{
+.clients-link{
 display: flex;
 justify-content: center;
 align-items: center;
@@ -437,7 +448,10 @@ height: 92px;
 }
 .clients-svg{
 fill: var(--secondary-text-color);
+transition: transform 500ms linear;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .clients-item:hover .clients-svg,
 .clients-item:focus .clients-svg{
 fill: var(--accent-color);
@@ -490,6 +504,8 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 color: var(--secondary-text-color);
+transition: color 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mail-link:hover,
 .mail-link:focus{
@@ -503,6 +519,8 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 color: var(--secondary-text-color);
+transition: color 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .tel-link:hover,
 .tel-link:focus{
@@ -541,6 +559,8 @@ height: 44px;
 border-radius: 50%;
 color: #ffffff;
 background-color: rgba(255, 255, 255, 0.1);;
+transition: color 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-icon{
 fill: currentColor;
@@ -625,7 +645,6 @@ margin-top: -30px;
 flex-basis: calc ((100% - 90px) / 3);
 margin-left: 30px;
 margin-top: 30px;
-
 }
 .portfolio-text{
 padding-top: 20px;
@@ -647,17 +666,16 @@ position: relative;
 overflow: hidden;
 }
 .overlay{
+background-color: rgba(33, 150, 243, 0.9);
 font-family: Roboto;
 font-size: 18px;
 line-height: 28px;
 letter-spacing: 0.03em;
 color: #FFFFFF;
 
-overflow: auto;
-
-background-color: rgba(33, 150, 243, 0.9);
-opacity: 0;
 position: absolute;
+overflow: auto;
+opacity: 0;
 top: 0;
 left: 0;
 width: 100%;
@@ -666,10 +684,16 @@ padding: 64px 24px 64px 24px;
 
 transform: translateY(100%);
 transition: transform 500ms linear;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-projects-link:hover .overlay
 .portfolio-projects-link:focus .overlay{
 transform: translateY(0%);
+opacity: 1;
+}
+.portfolio-projects-link:hover .overlay{
+transform: translateY(0);
+opacity: 1;
 }
 /*=========== END PORTFOLIO =========*/
