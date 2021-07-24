@@ -101,7 +101,7 @@ height: 4px;
 background-color: var(--accent-color);
 border-radius: 2px;
 position: absolute;
-margin-bottom: -78px;
+bottom: -34px;
 cursor: pointer;
 }
 .menu-link:hover,
@@ -723,14 +723,14 @@ top: 0;
 left: 0;
 width: 100vw;
 height: 100vh;
-background-color: rgba(0, 0, 0, 0.7);
+background-color: rgba(0, 0, 0, 0.2);
 
 opacity: 1;
 visibility: visible;
 pointer-events: auto;
 
-transition: opacity 500ms linear, 
-            visibility 500ms linear;
+transition: opacity 250ms linear, 
+            visibility 250ms linear;
 }
 
 .modal{
