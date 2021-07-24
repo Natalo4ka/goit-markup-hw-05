@@ -28,7 +28,7 @@
     <header class="page-header">
         <div class="container header-container">
             <nav class="navigation">
-                <a class="logo animate__rubberBand link" href="./">Web<span class="logo-header-part-2">Studio</span>
+                <a class="logo animate__pulse link" href="./">Web<span class="logo-header-part-2">Studio</span>
                 </a>
 
                 <ul class="menu-link list link">
@@ -76,7 +76,7 @@
         <section class="hero">
             <div class="container">
                 <h1 class="hero-title">эффективные решения<br />для вашего бизнеса</h1>
-                <button class="modal-btn animate__pulse" type="button">Заказать услугу</button>
+                <button class="modal-btn animate__rubberBand" type="button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
 
@@ -487,6 +487,20 @@
 
         </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="close-btn" data-modal-close>
+                <svg class="close-btn-svg" width="11px" height="11px">
+                    <use href="./images/sprite.svg#icon-x_for_modal">
+                    </use>
+                </svg>
+            </button>
+        </div>
+
+    </div>
+    <script src="./js/modal.js">
+    </script>
 
 </body>
 
